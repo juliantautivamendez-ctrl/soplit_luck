@@ -1555,6 +1555,7 @@ CREATE TABLE `notificaciones` (
   `id_rifa` int(11) DEFAULT NULL,
   `mensaje` varchar(255) DEFAULT NULL,
   `tipo` enum('recordatorio','resultado','alerta','confirmacion') DEFAULT NULL,
+  `leida` tinyint(1) NOT NULL DEFAULT 0,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
